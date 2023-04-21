@@ -1,0 +1,244 @@
+/* --------------------------------------------------- Header --------------------------------------------------- */
+nav 
+{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 4% 10% 2% 6%;
+  justify-content: space-between;
+}
+nav img 
+{
+  width: 200px;
+}
+#menu 
+{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+#bar 
+{
+  width: 2rem;
+  height: 1.5px;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 5px;
+  background-color: #eee;
+}
+#bar:before, #bar:after 
+{
+  content: "";
+  width: inherit;
+  height: inherit;
+  transition: 0.5s;
+  position: absolute;
+  border-radius: inherit;
+  background-color: #eee;
+}
+#bar:before 
+{
+  transform: translateY(-9px);
+}
+#bar:after 
+{
+  transform: translateY(9px);
+}
+#container.active #bar 
+{
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+#container.active #bar:before 
+{
+  transform: translateY(0) rotate(45deg);
+}
+#container.active #bar:after 
+{
+  transform: translateY(0) rotate(-45deg);
+}
+#container.active #main 
+{
+  cursor: pointer;
+  animation: main-animation 0.5s ease;
+  transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+#container #main
+{
+  animation: back-animation 0.5s ease;
+}
+#container.active #menu-liste
+{
+  z-index: 6;
+}
+@keyframes main-animation 
+{
+  from 
+  {
+    transform: translate(0);
+  }
+  to 
+  {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+}
+@keyframes back-animation 
+{
+  from 
+  {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+  to 
+  {
+    transform: translate(0);
+  }
+}
+/* --------------------------------------------------- Menu --------------------------------------------------- */
+#menu-liste 
+{
+  position: absolute;
+  height: 100vh;
+  width: 35%;
+  right: 0;
+  top: 0;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: left;
+}
+.iconB, .bi
+{
+  margin-right: 10px;
+}
+.iconA
+{
+  position: absolute;
+  left: 130px;
+}
+ul 
+{
+  list-style: none;
+}
+.li1
+{
+  display: flex;
+  transition: 0.5s;  
+  padding: 10px 5px 10px 15px;
+  position: relative;
+}
+.a1
+{
+  margin-right: 25px;
+}
+.li1:hover
+{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px #46505e;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.li1 .a1::after 
+{
+  content: "";
+  width: 0%;
+  height: 2px;
+  margin: auto;
+  display: block;
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.li1 .a1:hover::after 
+{
+  width: 100%;
+}
+#menu-liste .a1, #menu-liste i
+{
+  color: aliceblue;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(10px);
+  animation: hide 0.5s forwards ease;
+}
+#container.active #menu-liste a, #container.active #menu-liste i
+{
+  animation: appear 0.5s forwards ease var(--i);
+}
+@keyframes appear 
+{
+  from 
+  {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes hide 
+{
+  from 
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to 
+  {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.liste-deroulante
+{
+  position: absolute;
+  top: 0px;
+  left: 215px;
+  border-radius: 10px;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform 1s ease;
+  box-shadow: 0 2px 20px #46505e;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.li1:hover .liste-deroulante
+{
+  text-align: left;
+  border-radius: 10px;
+  transform: scaleY(1);
+}
+.liste-deroulante .li2
+{
+  width: 220px;
+  padding: 8px;
+  transition: 0.2s;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px black;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.5);
+}
+.liste-deroulante .li2 .a2
+{
+  color: azure;
+  font-size: 18px;
+  text-decoration: none;
+}
+.liste-deroulante .li2:hover
+{
+  color: aliceblue;
+  border-radius: 10px;
+  border-top: 1px solid azure;
+  border-left: 5px solid azure;  
+  border-right: 5px solid azure;
+  border-bottom: 1px solid azure;
+  background-color: rgba(194, 192, 192, 0.4);
+}

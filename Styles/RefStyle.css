@@ -1,0 +1,77 @@
+@import url(style.css);
+/* --------------------------------------------------- Référence --------------------------------------------------- */
+#main 
+{
+  display: flex;
+  justify-content: center; 
+}
+#reference
+{
+	width: 100%;
+	display: flex;
+  color: aliceblue;
+	flex-direction: column;
+	justify-content: center;
+}
+#ref-titre
+{
+	display: flex;
+	justify-content: center;
+}
+h1
+{
+  position: relative; 
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 40px 0;
+}
+h1::after
+{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 85%; 
+  left: 30px;
+  bottom: -5px; 
+  border-radius: 10px;
+  background-image: linear-gradient(to left, transparent 5%, rgb(221, 227, 233));
+}
+#ref
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+#ref div
+{
+	width: 70rem;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(136, 147, 158);
+  transition: 1s;
+}
+#ref div:hover
+{
+  box-shadow: 0 0 20px rgb(75, 75, 75);
+}
+#ref div p
+{
+  font-size: 20px;
+  text-indent: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+#ref div ul a
+{
+  font-size: 18px;
+  line-height: 35px;
+  margin-left: 100px;
+  letter-spacing: 1.5px;
+  color: rgb(194, 194, 194);
+}
+#ref div ul a:hover
+{
+  color: rgb(224, 231, 238);
+}

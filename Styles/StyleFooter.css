@@ -1,0 +1,104 @@
+/* --------------------------------------------------- Footer --------------------------------------------------- */
+footer 
+{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 25px;
+  font-family: "Open Sans";
+  background: #111;
+  color: #fff;
+}
+#footer-content 
+{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer-content h3 
+{
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+#footer-content p 
+{
+  font-size: 14px;
+  max-width: 500px;
+  margin: 8px auto 0;
+  line-height: 28px;
+  word-spacing: 2px;
+}
+.media 
+{
+  display: flex;
+  list-style: none;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.media li 
+{
+  margin: 0 10px;
+}
+.media a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.media a i, .bi
+{
+  font-size: 20px;
+  transition: color 0.4s ease;
+}
+.media a:hover .fa-facebook
+{
+  color: rgb(66, 100, 180);
+  transform: translateY(-2px);
+}
+.media a:hover .fa-twitter
+{
+  color: rgb(30, 160, 242);
+  transform: translateY(-2px);
+}
+.media a:hover .fa-instagram
+{
+  color: rgb(240, 76, 90);
+  transform: translateY(-2px);
+}
+.media a:hover .fa-google-plus
+{
+  color: rgb(220, 70, 50);
+  transform: translateY(-2px);
+}
+.media a:hover .fa-linkedin
+{
+  color: rgb(0, 100, 150);
+  transform: translateY(-2px);
+}
+#footer-bottom 
+{
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  background: #000;
+}
+#developers 
+{
+  opacity: 0.4;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+#trait
+{
+  margin-top: 15px;
+  width: 80%;
+  height: 1px;
+  border-radius: 15px;
+  background-color: gray;
+}

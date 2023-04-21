@@ -1,0 +1,192 @@
+@import url(style.css);
+/* --------------------------------------------------- À propos --------------------------------------------------- */
+#main 
+{
+  display: flex;
+  justify-content: center; 
+}
+#about
+{
+	width: 100%;
+	display: flex;
+  margin-top: 50px;
+  color: aliceblue;
+	flex-direction: column;
+	justify-content: center;
+}
+#QSN
+{
+	display: flex;
+	justify-content: center;
+}
+h1
+{
+  position: relative; 
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+h1::after
+{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 85%; 
+  left: 30px;
+  bottom: -5px; 
+  border-radius: 10px;
+  background-image: linear-gradient(to left, transparent 5%, rgb(221, 227, 233));
+}
+#cards
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+.card
+{
+	width: 35rem;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(136, 147, 158);
+  transition: 1s;
+}
+.card:hover
+{
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgb(75, 75, 75);
+}
+.image
+{
+  position: relative;
+	border-radius: 50%;
+  margin: 5px 0 20px 170px;
+  box-shadow: 0px 0px 20px black;
+  border: 1px solid rgb(136, 147, 158);
+}
+.image::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 1s;
+  border-radius: 50%;
+  border: 1px solid rgb(136, 147, 158);
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+}
+.image:hover::after
+{
+  opacity: 1;  
+  box-shadow: 0 0 20px rgb(75, 75, 75);
+}
+#image1:hover .icons i, #image2:hover .icons i
+{
+  opacity: 1;
+}
+#image1
+{
+	width: 12rem;
+	height: 12rem;
+	background-size: cover;
+	background-position: center center;
+	background-image: url('../Images/AB.png');
+}
+#image2
+{
+	width: 12rem;
+	height: 12rem;
+	background-size: cover;
+	background-position: center center;
+	background-image: url('../Images/AT.jpg');
+}
+.icons
+{
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  right: 23px;
+  font-size: 30px;
+}
+.icons i
+{
+  opacity: 0;
+  transition: 1.5s;
+}
+.icons .fa-facebook
+{
+  transition: 1s;
+  padding: 5px 12px;
+  border-radius: 37%;
+  color: rgb(66, 100, 180);
+}
+.icons .fa-facebook:hover
+{
+  color: aliceblue;
+  background-color: rgb(66, 100, 180);
+}
+.icons .fa-instagram
+{
+  transition: 1s;
+  padding: 5px 8px;
+  border-radius: 30%;
+  color: rgb(240, 76, 90);
+}
+.icons .fa-instagram:hover
+{
+  color: aliceblue;
+  background: linear-gradient(135deg, blue 0%, rgb(240, 76, 90) 75%);
+}
+.icons .fa-twitter
+{
+  transition: 1s;
+  padding: 5px 8px;
+  border-radius: 35%;
+  color: rgb(30, 160, 242);
+}
+.icons .fa-twitter:hover
+{
+  color: aliceblue;
+  background-color: rgb(30, 160, 242);
+}
+h2
+{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+h2 span 
+{
+  color: gray;
+}
+#nom1
+{  
+  margin-left: 75px;
+}
+#nom2
+{
+  margin-left: 105px;
+}
+.card p
+{
+  font-size: 15px;
+  line-height: 20px;
+  text-indent: 10px;  
+  text-align: justify;
+  letter-spacing: 1.5px;
+  margin: 0 0.35cm 10px 0.5cm;
+}
+.card p a
+{
+  color: aliceblue;
+  text-decoration: none;
+}
+.card p a:hover
+{
+  color: lightgrey;
+  text-decoration: underline;
+}

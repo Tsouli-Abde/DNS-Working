@@ -1,0 +1,206 @@
+@import url(StyleLirePlus.css);
+/* --------------------------------------------------- Logiciels --------------------------------------------------- */
+section
+{
+    color: aliceblue;
+    margin: 60px auto 50px 110px;
+}
+section #slt
+{
+    font-size: 40px;
+    font-family: platino;
+}
+section #msg
+{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 25px;
+    font-family: platino;
+}
+section table
+{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    font-size: 18px;
+}
+section table #th
+{
+    width: 160px;
+}
+section table .thd
+{
+    width: 330px;
+}
+section table .th
+{
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 14px 10px 8px;
+    background: cadetblue;
+    border-right: 2px solid rgb(50, 63, 63);
+    border-bottom: 2px solid rgb(50, 63, 63);
+}
+section table .td
+{
+    border-radius: 15px;
+    padding: 10px 0 0 15px;
+    background: rgba(103, 125, 126, 0.1);
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+section table input, section table select
+{
+    border: 0;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    color: aliceblue;
+    border-radius: 15px;
+    padding: 10px 0 0 15px;
+    background: rgba(103, 125, 126, 0.2);
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+::-webkit-input-placeholder
+{
+  color: aliceblue;
+  transition: opacity 0.4s ease-in-out;
+}
+:focus::-webkit-input-placeholder
+{
+  opacity: 0.6;
+}
+select:hover
+{
+  cursor: pointer;
+}
+select option
+{
+  color: black;
+}
+.field
+{
+  display: flex;
+  position: relative;
+}
+.icons i, .flags img
+{
+  display: none;
+}
+.icons
+{
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  font-size: 22px;
+}
+.flags
+{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.icon1
+{
+  color: green;
+}
+.icon2
+{
+  color: orange;
+}
+.icon3
+{
+  color: red;
+}
+#msg1, #msg2, #msg3, #msg4, #msg5, #msg6, #msg7
+{
+    padding: 10px 0 0 5px;
+}
+#boutons
+{
+  justify-content: center;
+  position: absolute;
+  top: 80.5%;
+  left: 82.5%;
+}
+input[type="submit"], button
+{
+  padding: 10px 10px 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: none;
+  width: 160px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(20, 20, 20, 0.9);
+  background: rgba(21, 107, 107, 1);
+  border-right: 2px solid rgb(40, 40, 40);
+  border-bottom: 2px solid rgb(40, 40, 40);
+}
+input[type="submit"]
+{  
+  cursor: auto;
+  margin-right: 10px;
+  color: rgba(211, 211, 211, 0.5);
+  background: rgba(65, 120, 120, 0.9);
+}
+input[type="submit"].hover
+{
+  cursor: pointer;
+  color: rgba(20, 20, 20, 1);
+  background: rgba(21, 107, 107, 1);
+}
+button:hover, .hover:hover
+{
+  transition: 1s;
+  color: rgba(217, 243, 243, 0.8) !important;
+  background:rgba(10, 133, 133, 1) !important;  
+  box-shadow: 0px 0px 10px rgba(11, 80, 80, 1);
+}
+#btn 
+{
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+#btn:hover 
+{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    background: cadetblue;
+    border: 1px solid cadetblue;
+}
+#msgsup
+{
+    position: absolute;
+    top: 45%;
+    left: 26%;
+    font-size: 25px;
+    border-radius: 20px;
+    border: 2px solid green;
+    box-shadow: 0 0 15px green;
+    padding: 15px 60px 20px 50px;
+    color: rgba(0, 20, 0, 0.8);
+    background: rgb(220, 255, 220);
+}
+#msgsup #icn
+{
+    color: green;
+    font-size: 35px;
+    margin-right: 15px;
+}

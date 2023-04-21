@@ -1,0 +1,154 @@
+@import url(StyleLirePlus.css);
+/* --------------------------------------------------- DNS --------------------------------------------------- */
+section
+{
+    color: aliceblue;
+    margin: 60px auto 50px 110px;
+}
+.part
+{
+    width: 70rem;
+    margin: 0 0 100px;
+    border-radius: 20px;
+    padding: 30px 25px 20px;
+    box-shadow: 0 0 20px black;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgb(136, 147, 158);
+    transition: 1s;
+}
+.part:hover
+{
+    box-shadow: 0 0 20px rgb(75, 75, 75);
+}
+.part h2
+{
+    color: rgb(226, 239, 240);
+    font-size: 40px;
+    padding: 5px 26px;
+    margin: 10px 0 35px;
+    border-radius: 20px;
+    border: 1px solid cadetblue;
+    background: rgb(17, 124, 128);
+    box-shadow: 0 0 5px rgb(79, 165, 168);
+}
+#para1 h2
+{
+    width: 500px;
+}
+#para2 h2
+{
+    width: 640px;
+}
+#para3 h2
+{
+    width: 590px;
+}
+.part p
+{
+    font-size: 20px;
+    line-height: 28px;
+    text-indent: 30px;
+    text-align: justify;
+    margin: 0 20px 20px 30px;
+}
+.part table, .part table p
+{
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 30px;
+    letter-spacing: 0.8px;
+    margin: 0px 30px 20px 20px;
+}
+.part table p
+{
+    padding: 5px 0 0;
+}
+table tr td ul
+{
+    list-style: none;
+}
+table tr td ul li
+{
+    padding-left: 50px;
+}
+table .gras
+{
+    font-size: 19px;
+    color: rgb(175, 202, 224);
+    text-decoration: underline;
+}
+table .gras i
+{
+    font-size: 8px;
+    color: rgb(175, 202, 224);
+}
+table ul b
+{
+    color: rgb(191, 216, 235);
+    text-decoration: underline;
+}
+table ul b .bi
+{
+    font-size: 8px;
+    color: rgb(191, 216, 235);
+}
+.mot-cle
+{
+    font-size: 1.05em;
+    color: rgb(179, 179, 179);
+}
+#para1 img
+{
+    float: right;
+    margin: 20px -50px 0 0;
+    shape-outside: circle();
+}
+#para2 img
+{
+    float: right;
+    margin: 10px 0 0 20px;
+}
+#para3 img
+{
+    transition: 1s;
+}
+#para3 img:hover
+{
+    transform: translateX(10px);
+}
+#img1
+{
+    position: relative;
+    top: -53px;
+}
+#img2
+{
+    position: relative;
+    top: -40px;
+}
+#img3
+{
+    position: relative;
+    top: -31px;
+}
+#img4
+{
+    position: relative;
+    top: -122px;
+}
+.part a
+{
+    font-size: 15px;
+    margin-left: 880px;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    transition: 1s;
+}
+.part a i
+{
+    font-size: 15px;
+}
+.part a:hover
+{
+    color: aliceblue;
+}

@@ -1,0 +1,135 @@
+@import url(StyleLirePlus.css);
+/* --------------------------------------------------- Logiciels --------------------------------------------------- */
+section
+{
+    color: aliceblue;
+    margin: 60px auto 50px 110px;
+}
+section #slt
+{
+    font-size: 40px;
+    font-family: platino;
+}
+section #msg
+{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    font-size: 25px;
+    font-family: platino;
+}
+section table
+{
+    position: absolute;
+    top: 32%;
+    left: 18%;
+    width: 64%;
+    font-size: 18px;
+}
+section table th
+{
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 16px 8px 8px;
+    background: cadetblue;
+    border-right: 2px solid rgb(50, 63, 63);
+    border-bottom: 2px solid rgb(50, 63, 63);
+}
+#thbi1
+{
+    padding: 0 0 2px 10px;
+    background: rgb(8, 190, 8);
+    border-right: 2px solid rgb(10, 110, 10);
+    border-bottom: 2px solid rgb(10, 110, 10);
+}
+#thbi2
+{
+    padding: 0 0 0 5px;
+    background: rgb(231, 8, 8);
+    border-right: 2px solid rgb(148, 10, 10);
+    border-bottom: 2px solid rgb(148, 10, 10);
+}
+#thbi1 .bi
+{
+    font-size: 25px;
+}
+#thbi2 .bi
+{
+    font-size: 30px;
+}
+section table td
+{
+    padding: 8px 0 4px;
+    border-radius: 15px;
+    background: rgba(103, 125, 126, 0.1);
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+#tdbi1
+{
+    transition: 1s;
+    padding-left: 10px;
+    background: rgba(8, 190, 8, 0.1);
+    border-right: 2px solid rgb(10, 110, 10);
+    border-bottom: 2px solid rgb(10, 110, 10);
+}
+#tdbi2
+{
+    transition: 1s;
+    padding-left: 10px;
+    background: rgba(231, 8, 8, 0.1);
+    border-right: 2px solid rgb(148, 10, 10);
+    border-bottom: 2px solid rgb(148, 10, 10);
+}
+#tdbi1 .bi
+{
+    color: rgb(0, 190, 0);
+}
+#tdbi2 .bi
+{
+    color: rgb(240, 0, 0);
+}
+#tdbi1:hover
+{
+    cursor: pointer;
+    transform: scale(1.12);
+    background: rgb(8, 190, 8);
+}
+#tdbi2:hover
+{
+    cursor: pointer;
+    transform: scale(1.12);
+    background: rgb(231, 8, 8);
+}
+#tdbi1:hover .bi
+{
+    color: aliceblue;
+}
+#tdbi2:hover .bi
+{
+    color: aliceblue;
+}
+#btn 
+{
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid gray;
+    box-shadow: 0 0 5px cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+#btn:hover 
+{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    background: cadetblue;
+    border: 1px solid cadetblue;
+}

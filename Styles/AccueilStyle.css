@@ -1,0 +1,56 @@
+@import url(Style.css);
+/* --------------------------------------------------- Accueil --------------------------------------------------- */
+#text 
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 76%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+#text h1
+{
+    font-size: 70px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+    background: url(../Images/Back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: Back 20s linear infinite;
+}
+@keyframes Back
+{
+    100%
+    {
+        background-position: 2000px 0;
+    }
+}
+#text p
+{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 50px 0 50px;
+    font-family: 'Times New Roman', Times, serif;   
+}
+#btn 
+{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 12px 34px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background: transparent;
+}
+#btn:hover 
+{
+    transition: 1s;
+    background: #000;
+    border: 1px solid #000;
+}
